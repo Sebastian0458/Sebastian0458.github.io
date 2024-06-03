@@ -1,0 +1,128 @@
+/* type selectors */
+html {
+	background-color: #696969;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+	width: 960px;
+	background-color: white;
+	margin: 1em auto;
+	padding: 0;
+	border: 1px solid black;
+}
+section,h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+section {
+	margin-top: 1.5em;
+	margin-bottom: 10em;	
+	margin-left: 25px;
+}
+
+ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+  }
+   
+  ol>li {
+    margin:0;
+    padding:0 0 0 2em;
+    text-indent:-2em;
+    list-style-type:none;
+    counter-increment:item;
+  }
+   
+  ol>li:before {
+    display:inline-block;
+    width:1.5em;
+    padding-right:0.5em;
+    font-weight:bold;
+    text-align:right;
+    content:counter(item) ".";
+  }
+  .bolded {
+    font-weight: bold;
+  }
+
+p { padding-bottom: 0.5em; }
+
+	
+em { font-weight: bold; }
+
+/* the styles for the header */
+header {
+	background-color: lightblue;
+	padding-bottom: 2em;
+}
+
+
+header h2 {
+	font-family: Italy, cursive;
+	font-size: 250%;
+	font-weight: bold;
+    color: lightgreen;
+    text-shadow: 2px 3px 0 black;
+    padding-top: .25em;
+    margin-left: 25px;
+}
+header h3 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 180%;
+	margin-left: 125px;
+}
+	
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style: none;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 190px;
+	padding: 1em 0;
+    text-decoration: none;
+    background-color: black;	
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+#nav_menu ul li a.lastitem {
+ 	border-right: none;
+ 	width: 192px;
+}
+#nav_menu a.current {
+	color: gray;
+}
+
+/* the styles for the section */
+section {
+	width: 935px;
+	padding-right: 20px;
+	float: right;
+}
+
+section img {
+	float: left;
+	margin: 0 1.5em 1em 0;
+}
+
+
+/* the styles for the footer */
+footer {
+	clear: both;
+	padding-top: 1em;
+	background-color: lightblue;
+	
+}
+footer p {
+	font-size: 90%;
+	color: black;
+	margin-left: 25px;
+	padding-bottom: 1em;
+}
